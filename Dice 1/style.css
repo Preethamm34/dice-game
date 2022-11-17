@@ -1,0 +1,46 @@
+.head{
+	text-align: center;
+	background-color:#212121;
+	padding: 30px;
+	font-size: 75px;
+	font-style: italic;
+	text-shadow: 5px 2px #ff0000;
+}
+body{
+	background-color: #757575;
+}
+.players{
+	text-align: center;
+	display: inline-block;
+	padding: 20px;
+}
+.head1{ 
+	font-size: 25px;
+	font-style: italic;
+	text-align: center;
+	text-shadow: 5px 2px #ff0000;	
+}
+button{
+	background-color:#212121;
+	padding:10px;
+	font-style: italic;
+	text-shadow: 2px 1px #ff0000;
+}
+P{
+	padding:10px;
+	font-size: 30px;
+	text-align: center;
+	font-style: italic;
+	text-shadow: 2px 1px #ff0000;
+}
+img{
+	padding: 10px;
+	height: 150px;
+	width: 150px;
+}
+.container{
+	text-align: center;
+}
+.btn{
+	 text-align: center;
+}

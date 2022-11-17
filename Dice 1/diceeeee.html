@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dice Game</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<style>
+.head{
+	text-align: center;
+	background-color:#212121;
+	padding: 30px;
+	font-size: 75px;
+	font-style: italic;
+	text-shadow: 5px 2px #ff0000;
+}
+body{
+	background-color: #757575;
+}
+.players{
+	text-align: center;
+	display: inline-block;
+	padding: 20px;
+}
+.head1{ 
+	font-size: 25px;
+	font-style: italic;
+	text-align: center;
+	text-shadow: 5px 2px #ff0000;	
+}
+button{
+	background-color:#212121;
+	padding:10px;
+	font-style: italic;
+	text-shadow: 2px 1px #ff0000;
+}
+P{
+	padding:10px;
+	font-size: 30px;
+	text-align: center;
+	font-style: italic;
+	text-shadow: 2px 1px #ff0000;
+}
+img{
+	padding: 10px;
+	height: 150px;
+	width: 150px;
+}
+.container{
+	text-align: center;
+}
+.btn{
+	 text-align: center;
+}
+</style>
+<body>
+
+	<div class="container">
+
+		<h1 class="head">DICE GAME</h1>
+	<h2 class="head1">Roll The Dice</h2>
+
+	<div class="players">
+	<h2>PLAYER 1
+	<img class="img1" src="image/dice6.png"></h2>
+	</div>
+
+	<div class="players">
+	<h2><img class="img2" src="image/dice6.png">
+	PLAYER 2</h2>
+	</div>
+
+	<div class="Winner">
+	<p>THE Winner IS</p>
+	</div>
+
+	</div>
+
+<div class="btn">
+	<button type="button" onclick="rollDice()">ROLL IT</button>
+</div>
+
+<script>
+function rollDice(){
+	let randomNumber1 = Math.floor(Math.random()*6)+1; 
+	let randomNumber2 = Math.floor(Math.random()*6)+1;
+
+	document.querySelector('.img1').src="image/dice" + randomNumber1 + ".png";
+	document.querySelector('.img2').src="image/dice" + randomNumber2 + ".png";
+
+	if(randomNumber1 > randomNumber2)
+	{
+	document.querySelector('p').innerHTML = "PLAYER 1 WINS";
+	}
+	else if(randomNumber1 < randomNumber2)
+	{
+		document.querySelector('p').innerHTML = "PLAYER 2 WINS";
+	}
+	else
+	{
+		document.querySelector('p').innerHTML = "IT'S A DRAW";
+	}
+}
+
+</script>
+
+
+</body>
+</html>
